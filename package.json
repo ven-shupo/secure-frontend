@@ -3,6 +3,7 @@
   "homepage": "http://ven-shupo.github.io/secure-frontend",
   "scripts": {
     "build": "next build",
+    "export": "next export",
     "dev": "next dev",
     "start": "next start",
     "predeploy": "npm run build",
