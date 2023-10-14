@@ -61,8 +61,7 @@
   max-width: 100vw;
   height: 90vw;
   max-height: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .card {
