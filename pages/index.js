@@ -5,11 +5,12 @@ import CardHolder from "../components/cardHolder";
 
 
 export default function Home() {
-  const AppStyle = styles.app`
-    background: var(--tg-theme-bg-color);
-  `;
+
   return (
-    <div className={AppStyle}>
+    <div
+      className={styles.app}
+      style={{backgroundColor: 'var(--tg-theme-bg-color)'}}
+    >
       <Script
         src="https://ven-shupo.github.io/secure-frontend/tgcl.js"
         strategy="beforeInteractive"
