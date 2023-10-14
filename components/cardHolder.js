@@ -8,27 +8,37 @@ const db = [
   {
     name: 'Richard Hendricks',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    age: 21,
     rate: 5,
+    description: '',
   },
   {
     name: 'Erlich Bachman',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
+    age: 32,
+    description: '',
   },
   {
     name: 'Monica Hall',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
+    age: 21,
+    description: '',
   },
   {
     name: 'Jared Dunn',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
+    age: 32,
+    description: '',
   },
   {
     name: 'Dinesh Chugtai',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
+    age: 32,
+    description: '',
   }
 ]
 
@@ -48,10 +58,10 @@ function CardHolder () {
     updateCurrentIndex(index - 1)
   }
   tg.expand();
-  tg.MainButton.setParams({text: 'FULL DESCRIPTION', is_visible: true}).onClick(() => {
+  tg.MainButton.setParams({text: 'Описание', is_visible: true}).onClick(() => {
     tg.showPopup({
       title: characters[currentIndexRef.current].name,
-      message: 'full description',
+      message: characters[currentIndexRef.current].description,
       buttons: [
         {type: 'cancel'},
       ]
@@ -76,7 +86,7 @@ function CardHolder () {
                 className={styles.card}
                 style={{ backgroundImage: 'url(' + character.url + ')' }}
               >
-                <h3>{character.name}</h3>
+                <h3>{character.name}, {character.age}</h3>
               </div>
             </TinderCard>
           </div>
