@@ -58,11 +58,10 @@
 
 .cardContainer {
   position: relative;
-  top: 10%;
   width: 90vw;
   max-width: 100vw;
-  height: 90vw;
-  max-height: 100vw;
+  height: 90vh;
+  max-height: 100vh;
   margin: auto;
   border-radius: 20px;
 }
