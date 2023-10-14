@@ -108,7 +108,7 @@
   bottom: 10%;
   margin: auto;
   width: 100%;
-  text-align: justify;
+  text-align: center;
   animation-name: popup;
   animation-duration: 800ms;
 }
