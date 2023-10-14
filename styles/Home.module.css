@@ -75,6 +75,7 @@
   border-radius: 20px;
   background-size: cover;
   background-position: center;
+  margin:auto;
 }
 
 .swipe:last-of-type {
