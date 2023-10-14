@@ -20,6 +20,7 @@
 
 .app {
   left: 0;
+  top: 0;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -61,8 +62,6 @@
 
 .card {
   position: relative;
-  left: 4%;
-  top: 4%;
   background-color: #fff;
   width: 80vw;
   max-width: 90vw;
