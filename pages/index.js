@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Body from 'next/bod'
 import styles from '../styles/Home.module.css';
 import Script from "next/script";
 import CardHolder from "../components/cardHolder";
