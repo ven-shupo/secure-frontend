@@ -79,7 +79,10 @@ function CardHolder () {
           </div>
         )}
       </div>
-      {lastDirection ? <h1 className={styles.infoText}>You swiped {lastDirection}</h1> : <h1 className={styles.infoText} />}
+      {lastDirection && <h1
+          className={styles.infoText}
+          style={{color: 'var(--tg-theme-text-color)'}}
+      >You swiped {lastDirection}</h1>}
     </div>
   )
 }

@@ -66,13 +66,16 @@
 }
 
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: #fff;
   width: 80vw;
   max-width: 90vw;
   height: 80vw;
   max-height: 90vw;
-  margin: auto;
+  border-radius: 20px;
   background-size: cover;
   background-position: center;
 }
