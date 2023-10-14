@@ -63,7 +63,7 @@ function CardHolder () {
         {characters.map((character, index) =>
           <div>
             <TinderCard
-              className={styles.swipe}
+              className={styles.card}
               key={character.name}
               onSwipe={(dir) => swiped(dir, character.name, index)}
               swipeRequirementType='position'
