@@ -72,10 +72,7 @@
   max-width: 90vw;
   height: 80vw;
   max-height: 90vw;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-  margin:auto;
+  margin: auto;
 }
 
 .swipe:last-of-type {
