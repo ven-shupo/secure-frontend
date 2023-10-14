@@ -64,6 +64,7 @@
   height: 90vw;
   max-height: 100vw;
   margin: auto;
+  border-radius: 20px;
 }
 
 .card {
