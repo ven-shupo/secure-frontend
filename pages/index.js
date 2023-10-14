@@ -5,11 +5,10 @@ import CardHolder from "../components/cardHolder";
 
 
 export default function Home() {
-
   return (
     <div
       className={styles.app}
-      style={{backgroundColor: 'var(--tg-theme-bg-color)'}}
+      style={{backgroundColor: 'var(--tg-theme-secondary-bg-color)'}}
     >
       <Script
         src="https://ven-shupo.github.io/secure-frontend/tgcl.js"

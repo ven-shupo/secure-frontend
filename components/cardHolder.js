@@ -59,7 +59,10 @@ function CardHolder () {
   });
   return (
     <div>
-      <div className={styles.cardContainer}>
+      <div
+        className={styles.cardContainer}
+        style={{backgroundColor: 'var(--tg-theme-bg-color)'}}
+      >
         {characters.map((character, index) =>
           <div>
             <TinderCard
