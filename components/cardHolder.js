@@ -1,8 +1,9 @@
-import React, { useState, useMemo, useRef, useEffect } from 'react'
+import React, {useRef, useState} from 'react'
 import TinderCard from 'react-tinder-card'
 import styles from '../styles/Home.module.css';
 import {useDeviceSize} from "../lib/deviceSize";
 import {useTelegramWeb} from "../lib/telegramWeb";
+
 const db = [
   {
     name: 'Richard Hendricks',
@@ -35,34 +36,50 @@ function CardHolder () {
   const characters = db;
   const tg = useTelegramWeb();
   const [width, height] = useDeviceSize();
+  const [currentIndex, setCurrentIndex] = useState(db.length - 1);
+  const currentIndexRef = useRef(currentIndex);
   const [lastDirection, setLastDirection] = useState();
-  const swiped = (direction, nameToDelete) => {
-    setLastDirection(direction)
+  const updateCurrentIndex = (val) => {
+    setCurrentIndex(val)
+    currentIndexRef.current = val
   }
-  tg.expand()
+  const swiped = (direction, nameToDelete, index) => {
+    setLastDirection(direction)
+    updateCurrentIndex(index - 1)
+  }
+  tg.expand();
+  tg.MainButton.setParams({text: 'FULL DESCRIPTION', is_visible: true}).onClick(() => {
+    tg.showPopup({
+      title: characters[currentIndexRef.current].name,
+      message: 'full description',
+      buttons: [
+        {type: 'cancel'},
+      ]
+    })
+  });
   return (
     <div>
-      <h1 className={styles.infoText}>Secure</h1>
       <div className={styles.cardContainer}>
-        {characters.map((character) =>
-          <TinderCard
-            className={styles.swipe}
-            key={character.name}
-            onSwipe={(dir) => swiped(dir, character.name)}
-            swipeRequirementType='position'
-            swipeThreshold={width / 2}
-          >
-            <div
-              className={styles.card}
-              style={{ backgroundImage: 'url(' + character.url + ')' }}
+        {characters.map((character, index) =>
+          <div>
+            <TinderCard
+              className={styles.swipe}
+              key={character.name}
+              onSwipe={(dir) => swiped(dir, character.name, index)}
+              swipeRequirementType='position'
+              swipeThreshold={width / 2}
             >
-              <h3>{character.name}</h3>
-              <rate>{character.rate}</rate>
-            </div>
-          </TinderCard>
+              <div
+                className={styles.card}
+                style={{ backgroundImage: 'url(' + character.url + ')' }}
+              >
+                <h3>{character.name}</h3>
+              </div>
+            </TinderCard>
+          </div>
         )}
       </div>
-      {lastDirection ? <h2 className={styles.infoText}>You swiped {lastDirection}</h2> : <h2 className={styles.infoText} />}
+      {lastDirection ? <h1 className={styles.infoText}>You swiped {lastDirection}</h1> : <h1 className={styles.infoText} />}
     </div>
   )
 }
