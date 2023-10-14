@@ -10,35 +10,35 @@ const db = [
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     age: 21,
     rate: 5,
-    description: '',
+    description: 'description',
   },
   {
     name: 'Erlich Bachman',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
-    description: '',
+    description: 'description',
   },
   {
     name: 'Monica Hall',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 21,
-    description: '',
+    description: 'description',
   },
   {
     name: 'Jared Dunn',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
-    description: '',
+    description: 'description',
   },
   {
     name: 'Dinesh Chugtai',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
-    description: '',
+    description: 'description',
   }
 ]
 
