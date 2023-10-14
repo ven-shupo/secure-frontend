@@ -6,35 +6,35 @@ import {useTelegramWeb} from "../lib/telegramWeb";
 
 const db = [
   {
-    name: 'Richard Hendricks',
+    name: 'Семен Сержантов',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     age: 21,
     rate: 5,
     description: 'description',
   },
   {
-    name: 'Erlich Bachman',
+    name: 'Андрей Андреянин',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
     description: 'description',
   },
   {
-    name: 'Monica Hall',
+    name: 'Саша Колесников',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 21,
     description: 'description',
   },
   {
-    name: 'Jared Dunn',
+    name: 'Миша Попов',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
     description: 'description',
   },
   {
-    name: 'Dinesh Chugtai',
+    name: 'Иван Никулин',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
@@ -87,6 +87,7 @@ function CardHolder () {
                 style={{ backgroundImage: 'url(' + character.url + ')' }}
               >
                 <h3>{character.name}, {character.age}</h3>
+                <rate>{character.rate}⭐</rate>
               </div>
             </TinderCard>
           </div>
