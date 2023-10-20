@@ -7,7 +7,7 @@ import {useTelegramWeb} from "../lib/telegramWeb";
 const db = [
   {
     name: 'Костя',
-    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    url: 'https://ven-shupo.github.io/secure-frontend/masik.jpeg',
     rate: 'Масик',
     age: 30,
     description: 'Детка, если ты мне не напишешь - мне напишет та сука' +
@@ -18,25 +18,25 @@ const db = [
   },
   {
     name: 'Дима',
-    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    url: 'https://ven-shupo.github.io/secure-frontend/chechik.jpeg',
     rate: 'Чечик',
     age: 25,
     description: 'Моя бывшая сказала, что я не найду никого лучше нее, но кажется я уже нашел' +
     '📷 | Реальное\n' + 
     '🫂 | Бета   \n' +
     '💰 | Комфорт  \n' +
-    'ТЕГИ: ботан, скуф' 
+    'ТЕГИ: анимешник' 
   },
   {
     name: 'Саша',
-    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    url: 'https://ven-shupo.github.io/secure-frontend/tubik.jpeg',
     rate: 'Тюбик',
     age: 21,
     description: 'Привет! Меня зовут Саша, мне 21' +
     '📷 | Фейк    \n' + 
     '🫂 | Омега   \n' +
     '💰 | Эконом  \n' +
-    'ТЕГИ: анимешник' 
+    'ТЕГИ: ботан, скуф' 
   },
 ]
 
