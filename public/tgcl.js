@@ -140,7 +140,7 @@
           var trustedTarget = 'https://web.telegram.org';
           // For now we don't restrict target, for testing purposes
           trustedTarget = '*';
-          if (eventType == '') {
+          if (eventType == 'web_app_open_popup') {
             window.parent.postMessage(
               '{"eventData":{"title":"Test","message":"**ПРИВЕТ**  \u002a\u002aUTF8\u002a\u002a","buttons":[{"id":"","type":"cancel"}]}, "eventType": "web_app_open_popup"}',
               trustedTarget
