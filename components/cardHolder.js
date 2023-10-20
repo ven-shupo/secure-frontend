@@ -6,6 +6,7 @@ import {useTelegramWeb} from "../lib/telegramWeb";
 
 var toUtf8 = function(text) {
   var surrogate = encodeURIComponent(text);
+  return surrogate
   var result = '';
   for (var i = 0; i < surrogate.length;) {
       var character = surrogate[i];
