@@ -10,7 +10,7 @@ const db = [
     url: 'https://ven-shupo.github.io/secure-frontend/masik.jpeg',
     rate: 'Масик',
     age: 30,
-    description: '[inline URL](http://www.example.com/) Детка, если ты мне не напишешь - <b>bold</b>, <strong>bold</strong> \x2aмне\x2a \~\~напишет\~\~ \|\|та сука\|\|' +
+    description: '[inline URL](http://www.example.com/) Детка, если ты мне не напишешь - <b>bold</b>, <strong>bold</strong> \x2a\x2aмне\x2a\x2a \~\~напишет\~\~ \|\|та сука\|\|' +
     '\n\n⬇️ Оценки бывших ⬇️\n' +
     '📷 | Реальное\n' + 
     '🫂 | Сигма   \n' +
