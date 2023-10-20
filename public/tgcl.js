@@ -126,17 +126,13 @@
         eventData = '';
       }
       console.log('[Telegram.WebView] > postEvent', eventType, eventData);
-      if (eventType == 'web_app_open_popup') {
-        console.log('DEBUG', JSON.stringify(eventData))
-      }
+      
       if (window.TelegramWebviewProxy !== undefined) {
         TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));
-        console.log('proxy')
         callback();
       }
       else if (window.external && 'notify' in window.external) {
         window.external.notify(JSON.stringify({eventType: eventType, eventData: eventData}));
-        console.log('external')
         callback();
       }
       else if (isIframe) {
@@ -144,8 +140,15 @@
           var trustedTarget = 'https://web.telegram.org';
           // For now we don't restrict target, for testing purposes
           trustedTarget = '*';
-          window.parent.postMessage(JSON.stringify({eventType: eventType, eventData: eventData}), trustedTarget);
-          console.log('IFRAME')
+          if (eventType == '') {
+            window.parent.postMessage(
+              '{"eventData":{"title":"Test","message":"**ПРИВЕТ**  **UTF8**","buttons":[{"id":"","type":"cancel"}]}, "eventType": "web_app_open_popup"}',
+              trustedTarget
+            );
+          } else {
+            window.parent.postMessage(JSON.stringify({eventType: eventType, eventData: eventData}), trustedTarget);
+          }
+          
           callback();
         } catch (e) {
           callback(e);
