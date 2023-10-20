@@ -9,7 +9,7 @@ const db = [
     name: 'Семен',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     age: 21,
-    rate: 5,
+    rate: 'Масик',
     description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
     '👤\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
     '🫂\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
@@ -20,7 +20,7 @@ const db = [
   {
     name: 'Андрей',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
+    rate: 'Штрих',
     age: 32,
     description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
     '👤\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
@@ -32,7 +32,7 @@ const db = [
   {
     name: 'Саша',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
+    rate: 'Тюбик',
     age: 21,
     description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
     '👤\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
@@ -44,7 +44,7 @@ const db = [
   {
     name: 'Миша',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
+    rate: 'Масик',
     age: 32,
     description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
     '👤\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
@@ -56,7 +56,7 @@ const db = [
   {
     name: 'Иван',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
+    rate: 'Тюбик',
     age: 32,
     description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
     '👤\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
@@ -112,7 +112,7 @@ function CardHolder () {
                 style={{ backgroundImage: 'url(' + character.url + ')' }}
               >
                 <h3>{character.name}, {character.age}</h3>
-                <rate>{character.rate}⭐</rate>
+                <rate><h3>{character.rate}</h3></rate>
               </div>
             </TinderCard>
           </div>
