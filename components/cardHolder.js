@@ -6,43 +6,64 @@ import {useTelegramWeb} from "../lib/telegramWeb";
 
 const db = [
   {
-    name: 'Семен Сержантов',
+    name: 'Семен',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     age: 21,
     rate: 5,
-    description: 'description',
+    description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
+    'Внешность\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
+    'Общение\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
+    'Характер\nЖенственный 🌑🌑🌕🌑🌑 Муженственный' +
+    'Деньги\nБедный 🌑🌑🌑🌕🌑 Богатый\n' +
+    'Тип\nЧечик\n'
   },
   {
-    name: 'Андрей Андреянин',
-    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
-    age: 32,
-    description: 'description',
-  },
-  {
-    name: 'Саша Колесников',
-    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
-    age: 21,
-    description: 'description',
-  },
-  {
-    name: 'Миша Попов',
-    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
-    rate: 5,
-    age: 32,
-    description: 'description',
-  },
-  {
-    name: 'Иван Никулин',
+    name: 'Андрей',
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     rate: 5,
     age: 32,
     description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
-        'Внешность\nДругой человек ___*_ Как на фото\n' +
-        'Общительность\nИнтроверт _*___ Экстраверт\n' +
-        'Деньги\nБедный ___*_ Богатый\n' +
-        'Заинтересованность\nАктивный __*_ Пассивный\n'
+        'Внешность\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
+        'Общение\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
+        'Характер\nЖенственный 🌑🌑🌕🌑🌑 Муженственный' +
+        'Деньги\nБедный 🌑🌑🌑🌕🌑 Богатый\n' +
+        'Тип\nЧечик\n'
+  },
+  {
+    name: 'Саша',
+    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    rate: 5,
+    age: 21,
+    description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
+        'Внешность\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
+        'Общение\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
+        'Характер\nЖенственный 🌑🌑🌕🌑🌑 Муженственный' +
+        'Деньги\nБедный 🌑🌑🌑🌕🌑 Богатый\n' +
+        'Тип\nЧечик\n'
+  },
+  {
+    name: 'Миша',
+    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    rate: 5,
+    age: 32,
+    description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
+        'Внешность\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
+        'Общение\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
+        'Характер\nЖенственный 🌑🌑🌕🌑🌑 Муженственный' +
+        'Деньги\nБедный 🌑🌑🌑🌕🌑 Богатый\n' +
+        'Тип\nЧечик\n'
+  },
+  {
+    name: 'Иван',
+    url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
+    rate: 5,
+    age: 32,
+    description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
+        'Внешность\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
+        'Общение\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
+        'Характер\nЖенственный 🌑🌑🌕🌑🌑 Муженственный' +
+        'Деньги\nБедный 🌑🌑🌑🌕🌑 Богатый\n' +
+        'Тип\nЧечик\n'
   }
 ]
 
