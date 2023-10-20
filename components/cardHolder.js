@@ -22,7 +22,7 @@ const db = [
     url: 'https://ven-shupo.github.io/secure-frontend/chechik.jpg',
     rate: 'Чечик',
     age: 25,
-    description: '*bold \*text* _italic \*text_ __underline__ ~strikethrough~ *bold _italic bold ~italic bold strikethrough~ __underline italic bold___ bold* [inline URL](http://www.example.com/) [inline mention of a user](tg://user?id=123456789) `inline fixed-width code`Моя бывшая сказала, что я не найду никого лучше нее, но кажется я уже нашел' +
+    description: '%2AМоя бывшая сказала%2A, что я не найду никого лучше нее, но кажется я уже нашел' +
     '\n\n⬇️ Оценки бывших ⬇️\n' +
     '📷 | Реальное \n' + 
     '🫂 | Бета     \n' +
