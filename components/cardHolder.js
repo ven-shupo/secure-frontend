@@ -18,7 +18,7 @@ const db = [
   },
   {
     name: 'Дима',
-    url: 'https://ven-shupo.github.io/secure-frontend/chechik.jpeg',
+    url: 'https://ven-shupo.github.io/secure-frontend/chechik.jpg',
     rate: 'Чечик',
     age: 25,
     description: 'Моя бывшая сказала, что я не найду никого лучше нее, но кажется я уже нашел' +
@@ -29,7 +29,7 @@ const db = [
   },
   {
     name: 'Саша',
-    url: 'https://ven-shupo.github.io/secure-frontend/tubik.jpeg',
+    url: 'https://ven-shupo.github.io/secure-frontend/tubik.jpg',
     rate: 'Тюбик',
     age: 21,
     description: 'Привет! Меня зовут Саша, мне 21' +
