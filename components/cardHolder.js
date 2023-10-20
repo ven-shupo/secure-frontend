@@ -114,7 +114,7 @@ function CardHolder () {
                 style={{ backgroundImage: 'url(' + character.url + ')' }}
               >
                 <h3>{character.name}, {character.age}</h3>
-                <rate><h3>{character.rate}</h3></rate>
+                <rate>{character.rate}</rate>
               </div>
             </TinderCard>
           </div>
