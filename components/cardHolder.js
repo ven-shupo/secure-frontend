@@ -4,24 +4,6 @@ import styles from '../styles/Home.module.css';
 import {useDeviceSize} from "../lib/deviceSize";
 import {useTelegramWeb} from "../lib/telegramWeb";
 
-var toUtf8 = function(text) {
-  var surrogate = encodeURIComponent(text);
-  return surrogate
-  var result = '';
-  for (var i = 0; i < surrogate.length;) {
-      var character = surrogate[i];
-  i += 1;
-      if (character == '%') {
-        var hex = surrogate.substring(i, i += 2);
-    if (hex) {
-      result += String.fromCharCode(parseInt(hex, 16));
-    }
-      } else {
-        result += character;
-      }
-  }
-  return result;
-};
 
 const db = [
   {
@@ -88,7 +70,7 @@ function CardHolder () {
   tg.MainButton.setParams({text: 'Описание', is_visible: true}).onClick(() => {
     tg.showPopup({
       title: characters[currentIndexRef.current].name,
-      message: toUtf8(characters[currentIndexRef.current].description),
+      message: characters[currentIndexRef.current].description,
       buttons: [
         {type: 'cancel'},
       ]

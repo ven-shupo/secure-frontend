@@ -126,7 +126,9 @@
         eventData = '';
       }
       console.log('[Telegram.WebView] > postEvent', eventType, eventData);
-  
+      if (eventType == 'web_app_open_popup') {
+        console.log('DEBUG', JSON.stringify(eventData))
+      }
       if (window.TelegramWebviewProxy !== undefined) {
         TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));
         callback();
