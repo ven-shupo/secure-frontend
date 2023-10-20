@@ -3,6 +3,7 @@ import TinderCard from 'react-tinder-card'
 import styles from '../styles/Home.module.css';
 import {useDeviceSize} from "../lib/deviceSize";
 import {useTelegramWeb} from "../lib/telegramWeb";
+import encodeUtf8 from 'encode-utf8'
 
 const db = [
   {
@@ -62,7 +63,7 @@ function CardHolder () {
   tg.MainButton.setParams({text: 'Описание', is_visible: true}).onClick(() => {
     tg.showPopup({
       title: characters[currentIndexRef.current].name,
-      message: characters[currentIndexRef.current].description,
+      message: encodeUtf8(characters[currentIndexRef.current].description),
       buttons: [
         {type: 'cancel'},
       ]
