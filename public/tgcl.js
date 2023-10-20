@@ -131,10 +131,12 @@
       }
       if (window.TelegramWebviewProxy !== undefined) {
         TelegramWebviewProxy.postEvent(eventType, JSON.stringify(eventData));
+        console.log('proxy')
         callback();
       }
       else if (window.external && 'notify' in window.external) {
         window.external.notify(JSON.stringify({eventType: eventType, eventData: eventData}));
+        console.log('external')
         callback();
       }
       else if (isIframe) {
@@ -143,6 +145,7 @@
           // For now we don't restrict target, for testing purposes
           trustedTarget = '*';
           window.parent.postMessage(JSON.stringify({eventType: eventType, eventData: eventData}), trustedTarget);
+          console.log('IFRAME')
           callback();
         } catch (e) {
           callback(e);
