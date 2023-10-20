@@ -10,8 +10,10 @@ const db = [
     url: 'https://ven-shupo.github.io/secure-frontend/semen.jpeg',
     age: 21,
     rate: 'Масик',
-    description: 'description очень большое описание \n\n\n\n\n\n\n\n\n\n\n\n' +
-    '👤\nДругой человек 🌑🌑🌕🌑🌑 Как на фото\n' +
+    description: 'description очень большое описание \n\n\n\n\n' +
+    '👤\n' + 
+    'ДРУГОЙ ЧЕЛОВЕК  |  КАК НА ФОТО\n' + 
+    '            🌑🌑🌕🌑🌑          \n' +
     '🫂\nЗажатый 🌑🌑🌑🌕🌑 Раскрепощенный\n' +
     '🧠\nЖенственный 🌑🌑🌕🌑🌑 Муженственный\n' +
     '💰\nБедный 🌑🌑🌑🌕🌑 Богатый\n' +
