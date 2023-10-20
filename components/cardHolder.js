@@ -10,7 +10,7 @@ const db = [
     url: 'https://ven-shupo.github.io/secure-frontend/masik.jpeg',
     rate: 'Масик',
     age: 30,
-    description: 'Детка, если ты мне не напишешь - <b>bold</b>, <strong>bold</strong> *мне* \~\~напишет\~\~ \|\|та сука\|\|' +
+    description: 'Детка, если ты мне не напишешь - <b>bold</b>, <strong>bold</strong> \x2aмне\x2a \~\~напишет\~\~ \|\|та сука\|\|' +
     '\n\n⬇️ Оценки бывших ⬇️\n' +
     '📷 | Реальное\n' + 
     '🫂 | Сигма   \n' +
@@ -62,7 +62,7 @@ function CardHolder () {
   tg.MainButton.setParams({text: 'Описание', is_visible: true}).onClick(() => {
     tg.showPopup({
       title: characters[currentIndexRef.current].name,
-      message: encodeURIComponent(characters[currentIndexRef.current].description),
+      message: characters[currentIndexRef.current].description,
       buttons: [
         {type: 'cancel'},
       ]
