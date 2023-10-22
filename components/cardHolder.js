@@ -3,6 +3,7 @@ import TinderCard from 'react-tinder-card'
 import styles from '../styles/Home.module.css';
 import {useDeviceSize} from "../lib/deviceSize";
 import {useTelegramWeb} from "../lib/telegramWeb";
+import $ from 'jquery'; 
 
 
 const db = [
@@ -63,7 +64,7 @@ function CardHolder () {
       type: "GET",
       url: 'http://127.0.0.1:8080',
     });
-    setLastDirection(direction)
+    setLastDirection(response)
     updateCurrentIndex(index - 1)
   }
   tg.expand();

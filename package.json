@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "cors": "^2.8.5",
+    "jquery": "^3.7.1",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
