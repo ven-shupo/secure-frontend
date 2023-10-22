@@ -59,6 +59,7 @@ function CardHolder () {
     currentIndexRef.current = val
   }
   const swiped = (direction, nameToDelete, index) => {
+    fetch('http://127.0.0.1:8080', {})
     setLastDirection(direction)
     updateCurrentIndex(index - 1)
   }
