@@ -42,13 +42,6 @@ const db = [
     '💰 | Эконом  \n' +
     '#️⃣ | Ботан, Скуф' 
   },
-  {
-    name: 'Test',
-    url: 'https://ven-shupo.github.io/secure-frontend/tubik.jpg',
-    rate: 'Тюбик',
-    age: 21,
-    description: '**ПРИВЕТ**  \u002a\u002aUTF8\u002a\u002a' 
-  },
 ]
 
 function CardHolder () {
