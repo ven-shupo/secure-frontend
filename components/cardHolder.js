@@ -63,7 +63,7 @@ function CardHolder () {
       type: "GET",
       url: 'http://127.0.0.1:8080',
     });
-    setLastDirection(response)
+    setLastDirection(direction)
     updateCurrentIndex(index - 1)
   }
   tg.expand();
