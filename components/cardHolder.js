@@ -62,10 +62,10 @@ function CardHolder () {
   const swiped = (direction, nameToDelete, index) => {
     const response = $.ajax({
       type: "GET",
-      url: 'http://127.0.0.1:8080',
+      url: 'https://ven-shupo.github.io/secure-frontend/',
       complete: function(xhr, textStatus) {
         console.log("response.statusCode", xhr.status);
-        setLastDirection( xhr.status);
+        setLastDirection(xhr.status);
       },
     });
     updateCurrentIndex(index - 1)
