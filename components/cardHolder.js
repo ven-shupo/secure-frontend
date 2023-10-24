@@ -63,8 +63,10 @@ function CardHolder () {
     const response = $.ajax({
       type: "GET",
       url: 'http://127.0.0.1:8080',
+      complete: function(xhr, textStatus) {
+        console.log("response.statusCode", xhr.status);
+      },
     });
-    console.log("response.statusCode", response.statusCode)
     setLastDirection(response.statusCode)
     updateCurrentIndex(index - 1)
   }
